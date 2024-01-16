@@ -11,13 +11,13 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Lime Green: hsl(163, 72%, 41%)
-- Bright Red: hsl(356, 69%, 56%)
+- Lime Green: hsl(163, 72%, 41%) #1db489
+- Bright Red: hsl(356, 69%, 56%) #dc414c
 
-- Facebook: hsl(208, 92%, 53%)
-- Twitter: hsl(203, 89%, 53%)
+- Facebook: hsl(208, 92%, 53%) #198ff5
+- Twitter: hsl(203, 89%, 53%) #1ca0f2
 - Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%)
-- YouTube: hsl(348, 97%, 39%)
+- YouTube: hsl(348, 97%, 39%) #c4032a
 
 #### Dark Theme
 
@@ -31,10 +31,10 @@ The designs were created to the following widths:
 
 #### Dark Theme
 
-- Very Dark Blue (BG): hsl(230, 17%, 14%)
-- Very Dark Blue (Top BG Pattern): hsl(232, 19%, 15%)
-- Dark Desaturated Blue (Card BG): hsl(228, 28%, 20%)
-- Desaturated Blue (Text): hsl(228, 34%, 66%)
+- Very Dark Blue (BG): hsl(230, 17%, 14%) #1e202a
+- Very Dark Blue (Top BG Pattern): hsl(232, 19%, 15%) #1f212e
+- Dark Desaturated Blue (Card BG): hsl(228, 28%, 20%) #252a41
+- Desaturated Blue (Text): hsl(228, 34%, 66%) #8b97c6
 - White (Text): hsl(0, 0%, 100%)
 
 #### Light Theme

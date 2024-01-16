@@ -8,7 +8,8 @@ module.exports = {
         VeryDark_bg: "hsl(228, 28%, 20%)",
       },
       backgroundImage: {
-        toggle: "linear-gradient(to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%))   ",
+        toggle: "linear-gradient(to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%))",
+        insta: "linear-gradient(to right,hsl(37, 97%, 70%),hsl(329, 70%, 58%))",
       },
     },
   },

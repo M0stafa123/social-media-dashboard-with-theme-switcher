@@ -1,15 +1,15 @@
 const Header = () => {
   return (
-    <header className="p-4">
+    <header className="p-4 text-white font-bold md:flex md:justify-between md:items-center">
       <div>
-        <h1 className="text-2xl font-bold">Social Media Dashboard</h1>
-        <p>Total Followers: 23,004</p>
+        <h1 className="text-2xl">Social Media Dashboard</h1>
+        <p className="text-sm text-[#8b97c6]">Total Followers: 23,004</p>
       </div>
-      <hr className="my-4" />
-      <section className="flex justify-between">
+      <hr className="my-4 border-[#8b97c6] md:hidden" />
+      <section className="flex text-sm justify-between md:justify-center gap-2 text-[#8b97c6]">
         Dark Mode{" "}
         <label
-          className="bg-toggle toggle border w-12 rounded-full cursor-pointer flex items-center relative"
+          className="bg-toggle toggle  w-12 rounded-full cursor-pointer flex items-center relative"
           htmlFor="toggle"
         >
           <input className=" hidden" id="toggle" type="checkbox" />

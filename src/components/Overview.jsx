@@ -36,25 +36,22 @@ const Overview = () => {
   return (
     <div className="w-[90%]  mx-auto">
       <h1 className=" text-3xl mb-5 font-bold text-white ">Overview - Today</h1>
-      <div className="flex flex-wrap justify-between gap-5">
+      <div className="parent-card">
         {data.map((item, index) => (
-          <div
-            className="flex flex-col cursor-pointer bg-[#252a41] gap-5 rounded-sm w-[100%] sm:w-[calc(95%/2)] lg:w-[calc(95%/3)] xl:w-[calc(80%/4)]  p-5  hover:bg-[#1f212e] "
-            key={index}
-          >
+          <div className="cards" key={index}>
             <div className="flex justify-between items-center">
-              <p className=" font-semibold text-[#63687e]">{item.name}</p>
+              <p className=" font-semibold text-[#8b97c6]">{item.name}</p>
               <img className="" src={item.svg} alt="" />
             </div>
             <div className="flex justify-between">
-              <p className=" font-bold text-3xl text-white">{item.number}</p>
+              <p className="font-bold text-3xl text-white">{item.number}</p>
               {item.color === `red` ? (
-                <div className="text-[red] flex items-center gap-1 font-semibold">
+                <div className="text-[red] rate">
                   <img src="images/icon-down.svg" alt="" />
                   <p>{item.rate}</p>
                 </div>
               ) : (
-                <div className="text-[green] flex items-center gap-1 font-semibold ">
+                <div className="text-[green] rate ">
                   <img src="images/icon-up.svg" alt="" />
                   <p> {item.rate}</p>
                 </div>

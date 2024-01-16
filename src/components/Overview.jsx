@@ -18,7 +18,13 @@ const Overview = () => {
     },
     { name: "Retweets", number: 117, rate: `303%`, svg: "images/icon-twitter.svg", color: `green` },
     { name: "Likes", number: 507, rate: ` 553%`, svg: "images/icon-twitter.svg", color: `green` },
-    { name: "Likes", number: 107, rate: `19%`, svg: "images/icon-youtube.svg", color: `red` },
+    {
+      name: "Likes",
+      number: 107,
+      rate: `19%`,
+      svg: "images/icon-youtube.svg",
+      color: `red`,
+    },
     {
       name: "Total Views",
       number: 1407,
@@ -29,11 +35,11 @@ const Overview = () => {
   ];
   return (
     <div className="w-[90%]  mx-auto">
-      <h1 className=" text-3xl mb-5 font-bold ">Overview - Today</h1>
+      <h1 className=" text-3xl mb-5 font-bold text-white ">Overview - Today</h1>
       <div className="flex flex-wrap justify-between gap-5">
         {data.map((item, index) => (
           <div
-            className="flex flex-col cursor-pointer bg-[#252a41] gap-5 rounded-sm w-[100%] md:w-[calc(95%/4)] p-5  hover:bg-[#1f212e] "
+            className="flex flex-col cursor-pointer bg-[#252a41] gap-5 rounded-sm w-[100%] sm:w-[calc(95%/2)] lg:w-[calc(95%/3)] xl:w-[calc(80%/4)]  p-5  hover:bg-[#1f212e] "
             key={index}
           >
             <div className="flex justify-between items-center">

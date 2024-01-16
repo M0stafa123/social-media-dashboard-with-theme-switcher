@@ -8,6 +8,7 @@ body {
 .toggle:has(input:checked) span {
   @apply left-[58%];
 }
+
 /* end header */
 /* social-stats */
 article div {
@@ -26,3 +27,14 @@ article div span {
   @apply flex items-center gap-1;
 }
 /* end  social-stats*/
+/* over view */
+.parent-card {
+  @apply flex flex-wrap justify-between gap-5;
+}
+.rate {
+  @apply flex items-center gap-1 font-semibold;
+}
+.cards {
+  @apply flex flex-col cursor-pointer bg-[#252a41] gap-5 rounded-sm w-[100%] sm:w-[calc(95%/2)] lg:w-[calc(95%/3)] xl:w-[calc(80%/4)]  p-5  hover:bg-[#1f212e];
+}
+/* end over view */

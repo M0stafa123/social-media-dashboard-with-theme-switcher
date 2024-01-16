@@ -11,7 +11,10 @@ module.exports = {
         toggle: "linear-gradient(to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%))",
         insta: "linear-gradient(to right,hsl(37, 97%, 70%),hsl(329, 70%, 58%))",
       },
+      fontFamily: {
+        'inter': ['Inter', `sans-serif`],
+      }
     },
   },
-  plugins: [function ({ addVariant }) {}],
+  plugins: [function ({ addVariant }) { }],
 };

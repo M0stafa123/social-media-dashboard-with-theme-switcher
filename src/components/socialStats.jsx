@@ -1,6 +1,6 @@
 const Social = () => {
   return (
-    <article className=" flex flex-wrap gap-4 my-4 px-2">
+    <article className=" w-[90%] mx-auto lg:justify-start xl:justify-between flex justify-between flex-wrap gap-5 my-4 ">
       <div className=" border-[#198ff5]">
         <section>
           <img src="images/icon-facebook.svg" alt="@nathanf" />

@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <header className="p-4 text-white font-bold md:flex md:justify-between md:items-center">
+    <header className="py-4 mt-5 w-[90%] mx-auto text-white font-bold md:flex md:justify-between md:items-center">
       <div>
         <h1 className="text-2xl">Social Media Dashboard</h1>
         <p className="text-sm text-[#8b97c6]">Total Followers: 23,004</p>

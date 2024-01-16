@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* header */
+.toggle:has(input:checked) span {
+  @apply left-[58%];
+}
+/* end header */
+
+

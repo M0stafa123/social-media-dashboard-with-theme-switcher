@@ -1,0 +1,14 @@
+{
+  "Light": {
+    "card": "bg-[#f0f2fa]",
+    "bg": "bg-white",
+    "battern": "bg-[#f5f7ff]",
+    "text": "text-[#63687e]"
+  },
+  "Dark": {
+    "card": "bg-[#252a41]",
+    "bg": "bg-[#1e202a]",
+    "battern": "bg-[#1f212e]",
+    "text": "text-[#8b97c6]"
+  }
+}

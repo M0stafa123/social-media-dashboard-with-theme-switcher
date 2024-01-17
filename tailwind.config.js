@@ -10,7 +10,10 @@ module.exports = {
       backgroundImage: {
         toggle: "linear-gradient(to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%))   ",
       },
+      fontFamily: {
+        'inter': ['Inter', `sans-serif`],
+      }
     },
   },
-  plugins: [function ({ addVariant }) {}],
+  plugins: [function ({ addVariant }) { }],
 };

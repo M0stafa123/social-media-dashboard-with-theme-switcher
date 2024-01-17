@@ -21,6 +21,7 @@ function App() {
       battern: "bg-[#1f212e]",
       text: "text-[#8b97c6]",
       cardHover: "bg-[#31395d]",
+      darkText: "text-white",
     },
   };
   let battern;

@@ -6,7 +6,7 @@ const Social = ({ dark, theme }) => {
   if (dark) {
     card = theme.Dark.card;
     text = theme.Dark.text;
-    darktext = theme.Dark.text;
+    darktext = theme.Dark.darkText;
     hover = theme.Dark.cardHover;
   } else {
     card = theme.Light.card;

@@ -8,7 +8,7 @@ const Header = ({ setDark, dark, theme }) => {
   if (dark) {
     bg = theme.Dark.bg;
     text = theme.Dark.text;
-    darktext = theme.Dark.text;
+    darktext = theme.Dark.darkText;
   } else {
     bg = theme.Light.bg;
     text = theme.Light.text;

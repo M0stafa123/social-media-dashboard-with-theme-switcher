@@ -64,7 +64,7 @@ const Overview = ({ dark, theme }) => {
   if (dark) {
     card = theme.Dark.card;
     text = theme.Dark.text;
-    darktext = theme.Dark.text;
+    darktext = theme.Dark.darkText;
     hover = theme.Dark.cardHover;
     document.body.style.backgroundColor = "#1e202a";
   } else {
@@ -77,7 +77,7 @@ const Overview = ({ dark, theme }) => {
   }
   return (
     <div className="w-[90%]  mx-auto">
-      <h1 className={`text-3xl mb-5 font-bold ${text}`}>Overview - Today</h1>
+      <h1 className={`text-3xl mb-5 font-bold ${darktext}`}>Overview - Today</h1>
       <div className="parent-card">
         {data.map((item, index) => (
           <div className={`cards ${card} hover:${hover}`} key={index}>

@@ -40,7 +40,7 @@ The designs were created to the following widths:
 #### Light Theme
 
 - White (BG): hsl(0, 0%, 100%)
-- Very Pale Blue (Top BG Pattern): hsl(225, 100%, 98%)
+- Very Pale Blue (Top BG Pattern): hsl(225, 100%, 98%) #f5f7ff
 - Light Grayish Blue (Card BG): hsl(227, 47%, 96%)
 - Dark Grayish Blue (Text): hsl(228, 12%, 44%)
 - Very Dark Blue (Text): hsl(230, 17%, 14%)

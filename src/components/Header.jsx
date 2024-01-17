@@ -1,19 +1,39 @@
-const Header = () => {
+const Header = ({ setDark, dark, theme }) => {
+  const handleClick = () => {
+    setDark(!dark);
+  };
+  let text;
+  let darktext;
+  let bg;
+  if (dark) {
+    bg = theme.Dark.bg;
+    text = theme.Dark.text;
+    darktext = theme.Dark.text;
+  } else {
+    bg = theme.Light.bg;
+    text = theme.Light.text;
+    darktext = theme.Light.darkText;
+  }
   return (
-    <header className="py-4 mt-5 w-[90%] mx-auto text-white font-bold md:flex md:justify-between md:items-center">
+    <header className={darktext}>
       <div>
-        <h1 className="text-2xl">Social Media Dashboard</h1>
-        <p className="text-sm text-[#8b97c6]">Total Followers: 23,004</p>
+        <h1 className="text-2xl transition-none">Social Media Dashboard</h1>
+        <p className={text}>Total Followers: 23,004</p>
       </div>
-      <hr className="my-4 border-[#8b97c6] md:hidden" />
-      <section className="flex text-sm justify-between md:justify-center gap-2 text-[#8b97c6]">
+      <hr className="border-[#8b97c6]" />
+      <section className={text}>
         Dark Mode{" "}
         <label
           className="bg-toggle toggle  w-12 rounded-full cursor-pointer flex items-center relative"
           htmlFor="toggle"
         >
-          <input className=" hidden" id="toggle" type="checkbox" />
-          <span className="bg-VeryDark_bg transition-all absolute rounded-full w-4 h-4 left-[6%]"></span>
+          <input
+            onChange={handleClick}
+            className="hidden"
+            id="toggle"
+            type="checkbox"
+          />
+          <span className={bg}></span>
         </label>
       </section>
     </header>

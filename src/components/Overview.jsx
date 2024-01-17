@@ -1,7 +1,19 @@
-const Overview = () => {
+const Overview = ({ dark, theme }) => {
   const data = [
-    { name: "Page Views", number: 87, rate: `3%`, svg: "images/icon-facebook.svg", color: `green` },
-    { name: "Likes", number: `52`, rate: `2%`, svg: "images/icon-facebook.svg", color: `red` },
+    {
+      name: "Page Views",
+      number: 87,
+      rate: `3%`,
+      svg: "images/icon-facebook.svg",
+      color: `green`,
+    },
+    {
+      name: "Likes",
+      number: `52`,
+      rate: `2%`,
+      svg: "images/icon-facebook.svg",
+      color: `red`,
+    },
     {
       name: "Likes",
       number: 5462,
@@ -16,8 +28,20 @@ const Overview = () => {
       svg: "images/icon-instagram.svg",
       color: `green`,
     },
-    { name: "Retweets", number: 117, rate: `303%`, svg: "images/icon-twitter.svg", color: `green` },
-    { name: "Likes", number: 507, rate: ` 553%`, svg: "images/icon-twitter.svg", color: `green` },
+    {
+      name: "Retweets",
+      number: 117,
+      rate: `303%`,
+      svg: "images/icon-twitter.svg",
+      color: `green`,
+    },
+    {
+      name: "Likes",
+      number: 507,
+      rate: ` 553%`,
+      svg: "images/icon-twitter.svg",
+      color: `green`,
+    },
     {
       name: "Likes",
       number: 107,
@@ -33,18 +57,36 @@ const Overview = () => {
       color: `red`,
     },
   ];
+  let card;
+  let text;
+  let darktext;
+  let hover;
+  if (dark) {
+    card = theme.Dark.card;
+    text = theme.Dark.text;
+    darktext = theme.Dark.text;
+    hover = theme.Dark.cardHover;
+    document.body.style.backgroundColor = "#1e202a";
+  } else {
+    card = theme.Light.card;
+    text = theme.Light.text;
+    darktext = theme.Light.darkText;
+    hover = theme.Light.cardHover;
+
+    document.body.style.backgroundColor = "white";
+  }
   return (
     <div className="w-[90%]  mx-auto">
-      <h1 className=" text-3xl mb-5 font-bold text-white ">Overview - Today</h1>
+      <h1 className={`text-3xl mb-5 font-bold ${text}`}>Overview - Today</h1>
       <div className="parent-card">
         {data.map((item, index) => (
-          <div className="cards" key={index}>
+          <div className={`cards ${card} hover:${hover}`} key={index}>
             <div className="flex justify-between items-center">
-              <p className=" font-semibold text-[#8b97c6]">{item.name}</p>
+              <p className={`font-semibold ${text}`}>{item.name}</p>
               <img className="" src={item.svg} alt="" />
             </div>
             <div className="flex justify-between">
-              <p className="font-bold text-3xl text-white">{item.number}</p>
+              <p className={`font-bold text-3xl ${darktext}`}>{item.number}</p>
               {item.color === `red` ? (
                 <div className="text-[red] rate">
                   <img src="images/icon-down.svg" alt="" />

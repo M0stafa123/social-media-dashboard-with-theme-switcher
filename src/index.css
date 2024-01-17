@@ -2,21 +2,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  @apply transition-all;
+}
 body {
   @apply bg-[#1e202a] font-inter;
 }
 .bg_back {
-  @apply bg-[#1f212e] -z-10 rounded-t-none rounded-tr-none rounded-3xl absolute top-0 w-full left-0 h-[200px];
+  @apply -z-10 rounded-t-none rounded-tr-none rounded-3xl absolute top-0 w-full left-0 h-[200px];
 }
 /* header */
 .toggle:has(input:checked) span {
   @apply left-[58%];
 }
-
+header {
+  @apply py-4 mt-5 w-[90%] mx-auto font-bold md:flex md:justify-between md:items-center;
+}
+header div p {
+  @apply text-sm;
+}
+header hr {
+  @apply my-4 md:hidden;
+}
+header section {
+  @apply flex text-sm justify-between md:justify-center gap-2;
+}
+header label span {
+  @apply transition-all absolute rounded-full w-4 h-4 left-[6%];
+}
 /* end header */
 /* social-stats */
 article div {
-  @apply w-[100%] sm:w-[calc(95%/2)] lg:w-[calc(95%/3)] xl:w-[calc(90%/4)] flex items-center flex-col p-2 hover:bg-[#1f212e] cursor-pointer bg-[#252a41] rounded-md   border-t-4 overflow-hidden;
+  @apply w-[100%] sm:w-[calc(95%/2)] lg:w-[calc(95%/3)] xl:w-[calc(90%/4)] flex items-center flex-col p-2  cursor-pointer  rounded-md   border-t-4 overflow-hidden;
 }
 article div section {
   @apply flex gap-2 text-[#8b97c6] my-4;
@@ -39,6 +56,6 @@ article div span {
   @apply flex items-center gap-1 font-semibold;
 }
 .cards {
-  @apply flex flex-col cursor-pointer bg-[#252a41] gap-5 rounded-lg w-[100%] sm:w-[calc(95%/2)] lg:w-[calc(95%/3)] xl:w-[calc(90%/4)]   p-5  hover:bg-[#1f212e];
+  @apply flex flex-col cursor-pointer  gap-5 rounded-lg w-[100%] sm:w-[calc(95%/2)] lg:w-[calc(95%/3)] xl:w-[calc(90%/4)]   p-5;
 }
 /* end over view */
